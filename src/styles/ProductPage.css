@@ -1,0 +1,55 @@
+.product-page {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.sidebar {
+  width: 100%;
+}
+
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+}
+
+.product-details {
+  width: 100%;
+  height: 84vh;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.card:first-of-type {
+  flex: 7;
+}
+
+.card:last-of-type {
+  flex: 3;
+  margin-top: 20px;
+}
+
+.header {
+  background-color: #000435;
+  display: block;
+}
