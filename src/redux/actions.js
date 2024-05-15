@@ -1,4 +1,3 @@
-// src/redux/actions.js
 export const SET_PRODUCT = 'SET_PRODUCT';
 
 export const setProduct = (product) => ({

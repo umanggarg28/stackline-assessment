@@ -1,4 +1,3 @@
-// src/redux/reducer.js
 import { SET_PRODUCT } from './actions';
 
 const initialState = {
