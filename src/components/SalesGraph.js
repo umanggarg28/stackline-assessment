@@ -1,6 +1,5 @@
 import React from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer } from 'recharts';
-import Typography from '@mui/material/Typography';
 
 // Utility function to format the date to "Month Year" format
 const formatDateToMonthYear = (dateString) => {
@@ -11,10 +10,7 @@ const formatDateToMonthYear = (dateString) => {
 };
 
 const SalesGraph = ({ sales }) => {
-  return (<>
-    <Typography variant="h7">
-      Retail Sales
-    </Typography>
+  return (
     <ResponsiveContainer width="100%" height={400}>
       <LineChart width={1000} height={400} data={sales} margin={{ top: 25, right: 30, left: 20, bottom: 0 }}>
         <XAxis dataKey="weekEnding" tickFormatter={formatDateToMonthYear}/>
@@ -26,7 +22,6 @@ const SalesGraph = ({ sales }) => {
         <Line type="monotone" dataKey="wholesaleSales" stroke="#82ca9d" />
       </LineChart>
     </ResponsiveContainer>
-    </>
   );
 };
 
